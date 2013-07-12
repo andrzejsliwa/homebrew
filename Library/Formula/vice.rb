@@ -21,7 +21,7 @@ class Vice < Formula
     # /opt for the library.
     system "./configure", "--disable-debug", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
-                          "--with-cocoa",
+                          "--enable-sdlui",
                           "--without-x",
                           "--enable-static-lame",
                           # VICE can't compile against FFMPEG newer than 0.11:
